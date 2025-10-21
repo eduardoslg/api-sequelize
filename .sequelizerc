@@ -1,0 +1,18 @@
+// .sequelizerc
+
+import path from 'path'
+
+module.exports = {
+  // 1. Onde está o arquivo de configuração (config.json)
+  // Vamos manter o que o 'init' criou, na pasta 'config/'
+  'config': path.resolve('config', 'config.json'),
+
+  // 2. Onde estão seus Models
+  'models-path': path.resolve('src', 'db', 'models'),
+
+  // 3. Onde estão suas Migrations
+  'migrations-path': path.resolve('src', 'db', 'migrations'),
+
+  // 4. Onde estão seus Seeders (mesmo que não use, é bom definir)
+  'seeders-path': path.resolve('src', 'db', 'seeders')
+};
