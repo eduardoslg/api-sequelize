@@ -5,6 +5,6 @@ import { errorHandler } from './errors/error-handler'
 
 export const app = express()
 
-// app.use(errorHandler)
 app.use(express.json())
 app.use(routes)
+app.use(errorHandler)
